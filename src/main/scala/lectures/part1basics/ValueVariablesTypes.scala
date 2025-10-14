@@ -1,4 +1,4 @@
-package playground
+package lectures.part1basics
 
 object ValueVariablesTypes extends App {
   val x: Int = 42
@@ -8,13 +8,19 @@ object ValueVariablesTypes extends App {
   // VALS ARE IMMUTABLE
   // COMPILER can infer types
 
-  // string
-
   val aString: String = "hello"
   val anotherString = "goodbye"
 
   val aBoolean: Boolean = false
   val aChar: Char = 'a'
   val anInt: Int = x
+  val aShort: Short = 4613
+//   val aLong: Long = 3428447328947892L
+  val aFloat: Float = 2.0f
+  val aDouble: Double = 3.14
+
+//variables
+  var aVariable: Int = 4
+  aVariable = 5 // vars are offten used in side effects
 
 }
