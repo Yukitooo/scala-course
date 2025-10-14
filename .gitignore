@@ -1,0 +1,23 @@
+# Scala/SBT
+*.class
+*.log
+target/
+project/target/
+project/project/
+
+# Metals/Bloop
+.metals/
+.bloop/
+.bsp/
+metals.sbt
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
