@@ -1,21 +1,25 @@
 package lectures.part2oop
 
 object OOBasics extends App {
-  val person = new Person("John", 26)
-  println(person.greet("YUKI"))
-  println(person.greet())
+  val author = new Novel("Percival's Book", "2020", "Giovanni")
+
+  println(author.authorAge(5))
+  println(author.isWrittenBy())
+  println(author.copy("2001"))
+
 }
 
-class Person(
-    val name: String,
-    val age: Int
-) {
-  // method
-  def greet(name: String): Unit = println(s"${this.name} says: Hi, $name")
+class Novel(val name: String, val yearOfRelease: String, val author: String) {
+  def authorAge(age: Int): Unit = {
+    println(s"$name is $age years old.")
+  }
 
-  // overloading
-  def greet(): Unit = println(s"Hi, I am $name")
+  def isWrittenBy(): Unit = {
+    println(s"This book is written by $author")
+  }
 
-  // multiple constructors
-  def this(name: String) = this(name, 0)
+  def copy(newYearOfRelease: String): Unit = {
+    val newAuthor = new Novel(name, newYearOfRelease, author)
+    println(newAuthor.yearOfRelease)
+  }
 }
