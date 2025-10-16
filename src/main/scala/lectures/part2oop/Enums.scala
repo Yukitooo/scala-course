@@ -22,6 +22,8 @@ object Enums {
     case NONE extends PermissionWithBits(0)
   }
 
+  //standard API 
+
   def main(args: Array[String]): Unit = {
     somePermissions.openDocument()
   }
