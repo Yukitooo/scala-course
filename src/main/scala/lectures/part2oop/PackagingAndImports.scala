@@ -1,3 +1,5 @@
 package lectures.part2oop
 
-object PackagingAndImports extends App {}
+object PackagingAndImports extends App {
+    
+}
